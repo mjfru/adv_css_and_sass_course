@@ -1,1 +1,1 @@
-# adv_css_and_sass_course
+# Advanced CSS & Sass Coursework
