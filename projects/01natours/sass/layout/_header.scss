@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  height: 95vh;
+  /* Adding the gradient over the image */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+  //! Essentialy, the '&' adds the .header
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    /* In relation to the parent element: */
+    top: 40%;
+    left: 50%;
+    /* In relation to the element itself: */
+    transform: translate(-50%, -50%);
+    /* Aligning the button to the center, since it's considered text */
+    text-align: center;
+  }
+}
