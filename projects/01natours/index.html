@@ -18,25 +18,37 @@
   <body>
     <div class="navigation">
       <input type="checkbox" id="navi-toggle" class="navigation__checkbox" />
-      <label for="navi-toggle" class="navigation__button"><span class="navigation__icon"></span></label>
+      <label for="navi-toggle" class="navigation__button"
+        ><span class="navigation__icon"></span
+      ></label>
 
       <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>01 </span>About Natours</a>
+            <a href="#section-about" class="navigation__link"
+              ><span>01 </span>About Natours</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>02 </span>Your Benefits</a>
+            <a href="#section-features" class="navigation__link"
+              ><span>02 </span>Your Benefits</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>03 </span>Popular Tours</a>
+            <a href="#section-tours" class="navigation__link"
+              ><span>03 </span>Popular Tours</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04 </span>Stories</a>
+            <a href="#section-stories" class="navigation__link"
+              ><span>04 </span>Stories</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>05 </span>Book Now</a>
+            <a href="#section-book" class="navigation__link"
+              ><span>05 </span>Book Now</a
+            >
           </li>
         </ul>
       </nav>
@@ -57,12 +69,14 @@
           <span class="heading-primary--sub">Is where life happens</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting tours for adventurous people
@@ -114,7 +128,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="section-features">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -174,7 +188,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most Popular Tours</h2>
         </div>
@@ -206,7 +220,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$299</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -238,7 +252,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$499</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -270,7 +284,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$799</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -282,7 +296,7 @@
         </div>
       </section>
 
-      <section class="section-stories">
+      <section class="section-stories" id="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4" />
@@ -349,7 +363,7 @@
         </div>
       </section>
 
-      <section class="section-book">
+      <section class="section-book" id="section-book">
         <div class="row">
           <div class="book">
             <div class="book__form">
@@ -451,6 +465,48 @@
       </div>
     </footer>
 
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="./img/nat-8.jpg"
+            alt="nature tour photo"
+            class="popup__img"
+          />
+          <img
+            src="./img/nat-9.jpg"
+            alt="nature tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start Booking Now!
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+            deleniti soluta sit qui cum laboriosam, quibusdam eaque magni
+            perspiciatis delectus, omnis quam nulla consectetur? Labore hic
+            molestias modi unde deserunt. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Omnis, nostrum laudantium a incidunt
+            magnam inventore? Perspiciatis quod ducimus officiis libero.
+            Dignissimos ad aspernatur aut animi quam quaerat quo nemo maxime.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sequi
+            aperiam error unde rerum quam illum assumenda placeat ullam, sit
+            dolorem modi eaque cupiditate! Numquam dignissimos quaerat id quae
+            vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est,
+            illo veniam. Vel necessitatibus dolores dignissimos exercitationem,
+            repudiandae illo. Optio ea quas aperiam, vel iure dolorum dolor
+            ducimus dignissimos deserunt ex!
+          </p>
+          <a href="#section-book" class="btn btn--green">Book Now</a>
+        </div>
+      </div>
+    </div>
     <!-- For testing purposes only: -->
     <!-- <section class="grid-test">
       <div class="row">
@@ -484,6 +540,13 @@
       </div>
     </section> -->
   </body>
+  <script>
+    document.querySelectorAll(".navigation__link").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.querySelector("#navi-toggle").checked = false;
+      });
+    });
+  </script>
   <script
     src="https://kit.fontawesome.com/125a16edce.js"
     crossorigin="anonymous"
