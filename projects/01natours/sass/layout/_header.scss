@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 95vh;
+  height: 80vh; // Changed from 85vh
   /* Adding the gradient over the image */
   background-image: linear-gradient(
       to right bottom,
@@ -10,7 +10,12 @@
     url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+
+  @include respond(phone) {
+    height: 75vh;
+    // clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  }
 
   //! Essentialy, the '&' adds the .header
   &__logo-box {
